@@ -1,33 +1,18 @@
-import { Request } from './src/request.js';
+import { Jevity } from './src/core.js';
+
+function testTemplate(props){
+    console.log(props);
+    return `
+        <p class="fw-bold">#${props.id} - ${props.title}</p>
+        <p>${props.description}</p>
+    `;
+}
 
 (async () => {
 
-    //Apenas testes
-
-    const req = new Request('https://dummyjson.com/products/2');
-
-    console.log(await req.get().go());
-
-    document.querySelectorAll('[jevity]').forEach(el => {
-
-        el.addEventListener('click', async (event) => {
-
-            
-            const url = event.target.getAttribute('j-url');
-            const method = event.target.getAttribute('j-method');
-            const target = event.target.getAttribute('j-target');
-            document.querySelector(target).innerHTML = 'Carregando...';
-
-            const req = new Request(url);
-            const response = await req.setMethod(method).go();
-
-            document.querySelector(target).innerHTML = `
-                <p class="fw-bold">${response.title}</p>
-                <p>${response.description}</p>
-            `;
-
-        });
-
-    });
-
+    const jevity = new Jevity();   
+    
+    jevity.addTemplate('t1', testTemplate);
+    
+    jevity.start();
 })();
