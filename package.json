@@ -1,0 +1,25 @@
+{
+  "name": "jevity",
+  "version": "0.0.1",
+  "description": "A utility tool javascript framework",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigocborges/jevity.git"
+  },
+  "keywords": [
+    "utility",
+    "framework"
+  ],
+  "author": "Rodrigo Borges",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodrigocborges/jevity/issues"
+  },
+  "homepage": "https://github.com/rodrigocborges/jevity#readme"
+}
