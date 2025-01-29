@@ -1,6 +1,6 @@
 {
   "name": "jevity",
-  "version": "0.0.1",
+  "version": "0.0.1b",
   "description": "Simplify development of applications in Javascript",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

@@ -21,8 +21,12 @@ export async function simplifyFetch({ url, method = 'GET', headers = {}, data, c
 	if(callbacks && !request.ok && callbacks.onRequestError){
 		callbacks.onRequestError(request);
 	}
+	if(!request.ok){
+		return;
+	}
 	const response = responseType == 'json' ? await request.json() : responseType == 'blob' ? await request.blob() : await request.text();
 	if(callbacks && callbacks.onRequestSuccess){
 		callbacks.onRequestSuccess(response);
 	}
 }
+
