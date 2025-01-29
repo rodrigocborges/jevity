@@ -2,6 +2,7 @@
 ![Logo](https://i.imgur.com/6UTKtHp.png)
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/rodrigocborges/jevity/blob/master/README.md)
+![](https://img.shields.io/npm/v/jevity)
 
 # jevity
 Uma simples biblioteca Javascript para construir layouts simples, facilitar as requisições e também servir como um `generic utility tool` para operações repetitivas.
