@@ -1,0 +1,2 @@
+- [ ] Create a simple log system, better than simple `console.log`
+- [ ] Make a better way to create skeleton loadings
