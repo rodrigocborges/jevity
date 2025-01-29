@@ -1,5 +1,5 @@
 
-![Logo](https://i.imgur.com/6UTKtHp.png)
+![Logo](https://i.imgur.com/3XYnfXe.png)
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/rodrigocborges/jevity/blob/master/README.md)
 ![](https://img.shields.io/npm/v/jevity)
